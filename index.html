@@ -214,12 +214,14 @@ let mixer = null;
 const clock = new THREE.Clock();
 const loader = new FBXLoader();
 
+const BASE = "https://media.githubusercontent.com/media/RANM-rgb/mixamo-three.js/main/assets/";
+
 const animations = {
-    idle: "./assets/breathing.fbx",
-    run: "./assets/run.fbx",
-    kick: "./assets/kick.fbx",
-    takedown: "./assets/takedown.fbx",
-    assassination: "./assets/assassination.fbx"
+    idle: BASE + "breathing.fbx",
+    run: BASE + "run.fbx",
+    kick: BASE + "kick.fbx",
+    takedown: BASE + "takedown.fbx",
+    assassination: BASE + "assassination.fbx"
 };
 
 const scene = new THREE.Scene();
